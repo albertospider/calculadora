@@ -2,10 +2,12 @@
   "expo": {
     "name": "Calculadora de Taxas",
     "slug": "bolt-expo-nativewind",
-    "version": "1.0.0",
+    "version": "1.0.1",
+    "platforms": ["ios", "android", "web"],
     "orientation": "portrait",
     "icon": "./assets/app-icon.png",
     "userInterfaceStyle": "light",
+    "newArchEnabled": true,
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -18,6 +20,9 @@
       "supportsTablet": true
     },
     "android": {
+      "compileSdkVersion": 35,
+      "targetSdkVersion": 35,
+      "buildToolsVersion": "35.0.0",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -26,6 +31,12 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
     }
   }
 }
